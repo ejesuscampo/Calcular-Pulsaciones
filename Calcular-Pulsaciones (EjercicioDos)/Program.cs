@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Entity;
+using System;
 
 namespace Calcular_Pulsaciones__EjercicioDos_
 {
@@ -10,42 +7,41 @@ namespace Calcular_Pulsaciones__EjercicioDos_
     {
         static void Main(string[] args)
         {
-            int edad = 0;
-            int sexo = 0;
-            float pulsaciones = 0;
+            string identificacion, nombre, sexo;
+            int edad;
 
-            Console.WriteLine("CALCULO NUMERO DE PULSACIONES"); Console.WriteLine("");
+            Console.WriteLine("CALCULAR NUMERO DE PULSACIONES"); 
+            Console.WriteLine("");
 
-            //Ingreso de datos
+            Console.Write("Digite su identificacion: ");
+            identificacion = Console.ReadLine();
+            Console.WriteLine("");
+
+            Console.Write("Digite su nombre: ");
+            nombre = Console.ReadLine();
+            Console.WriteLine("");
+
+
             Console.Write("Ingrese su edad: ");
-            edad = int.Parse(Console.ReadLine());   Console.WriteLine("");
+            edad = int.Parse(Console.ReadLine()); 
+            Console.WriteLine("");
 
-            do
+
+            Console.Write("Seleccione su sexo ( F / M ): ");
+            sexo = Console.ReadLine();
+
+            Persona persona = new Persona()
             {
-                Console.WriteLine("      Seleccione su sexo");
-                Console.WriteLine("1. Femenino    -    2. Masculino");
-                sexo = int.Parse(Console.ReadLine());
+                Identificacion = identificacion,
+                Nombre = nombre,
+                Edad = edad,
+                Sexo = sexo
+            };
 
-           
+            persona.CalcularPulsaciones();
 
-            //Calculo para obtener total de las pulsaciones 
-            switch (sexo)
-            {
-                case 1:
-                    pulsaciones = (220 - edad) / 10;
-                    Console.WriteLine($"El numero de pulsaciones que debes tener es: {pulsaciones}");
-                    break;
-
-                case 2:
-                    pulsaciones = (210 - edad) / 10;
-                    Console.WriteLine($"El numero de pulsaciones que debes tener es: {pulsaciones}");
-                    break;
-                default:
-                    Console.WriteLine("La opción no es valida");        Console.WriteLine("");
-                    break;
-            }
-
-            } while ((sexo != 1 & sexo !=2));
+            Console.WriteLine("");
+            Console.WriteLine($"El numero de pulsaciones que debes tener es: {persona.Pulsaciones}");
 
             Console.ReadKey();
         }
