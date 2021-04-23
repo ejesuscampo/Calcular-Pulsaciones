@@ -1,4 +1,5 @@
-﻿using Entity;
+﻿using BLL;
+using Entity;
 using System;
 
 namespace Calcular_Pulsaciones__EjercicioDos_

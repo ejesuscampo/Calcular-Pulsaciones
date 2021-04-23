@@ -28,13 +28,13 @@ namespace Entity
 
         public void CalcularPulsaciones()
         {
-            if (Sexo.ToUpper().Equals("F"))
+            if (Sexo.ToUpper().Equals("Femenino"))
             {
 
                 Pulsaciones = (220 - Edad) / 10;
 
             }
-            else if (Sexo.ToUpper().Equals("M"))
+            else if (Sexo.ToUpper().Equals("Masculino"))
             {
 
                 Pulsaciones = (210 - Edad) / 10;
@@ -44,6 +44,10 @@ namespace Entity
             {
                 Pulsaciones = 0;
             }
+        }
+        public override string ToString()
+        {
+            return $"Identificacion:{Identificacion} Nombre: {Nombre} Edad: {Edad} Sexo:{Sexo} Pulsacion {Pulsaciones}";
         }
     }
 }
