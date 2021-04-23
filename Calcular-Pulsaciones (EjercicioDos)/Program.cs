@@ -43,6 +43,25 @@ namespace Calcular_Pulsaciones__EjercicioDos_
             Console.WriteLine("");
             Console.WriteLine($"El numero de pulsaciones que debes tener es: {persona.Pulsaciones}");
 
+            PersonaService personaService = new PersonaService();
+            Console.WriteLine(personaService.Guardar(persona));
+
+
+            Console.WriteLine("/// Consulta de Personas///");
+            ConsultaResponse response = personaService.Consultar();
+            if (!response.Error)
+            {
+                foreach (var item in response.Personas)
+                {
+                    Console.WriteLine(item.ToString());
+                }
+            }
+            else
+            {
+                Console.WriteLine(response.Mensaje);
+            }
+
+
             Console.ReadKey();
         }
     }
