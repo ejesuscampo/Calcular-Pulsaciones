@@ -23,6 +23,11 @@ namespace GUIPulsaciones
 
         private void BtnCalcularGuardar_Click(object sender, EventArgs e)
         {
+            GuardarCalcular();
+        }
+
+        private void GuardarCalcular()
+        {
             Persona persona = new Persona()
             {
                 Identificacion = TxtIdentificacion.Text,

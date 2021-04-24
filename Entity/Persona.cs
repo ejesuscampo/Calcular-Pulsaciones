@@ -28,13 +28,13 @@ namespace Entity
 
         public void CalcularPulsaciones()
         {
-            if (Sexo.ToUpper().Equals("Femenino"))
+            if (Sexo.Equals("Femenino"))
             {
 
                 Pulsaciones = (220 - Edad) / 10;
 
             }
-            else if (Sexo.ToUpper().Equals("Masculino"))
+            else if (Sexo.Equals("Masculino"))
             {
 
                 Pulsaciones = (210 - Edad) / 10;

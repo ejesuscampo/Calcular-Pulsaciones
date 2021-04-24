@@ -70,7 +70,7 @@ namespace GUIPulsaciones
             // 
             this.LblIdentificacion.AutoSize = true;
             this.LblIdentificacion.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LblIdentificacion.Location = new System.Drawing.Point(595, 72);
+            this.LblIdentificacion.Location = new System.Drawing.Point(566, 78);
             this.LblIdentificacion.Name = "LblIdentificacion";
             this.LblIdentificacion.Size = new System.Drawing.Size(121, 19);
             this.LblIdentificacion.TabIndex = 1;
@@ -80,7 +80,7 @@ namespace GUIPulsaciones
             // 
             this.LblNombre.AutoSize = true;
             this.LblNombre.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LblNombre.Location = new System.Drawing.Point(640, 109);
+            this.LblNombre.Location = new System.Drawing.Point(611, 115);
             this.LblNombre.Name = "LblNombre";
             this.LblNombre.Size = new System.Drawing.Size(76, 19);
             this.LblNombre.TabIndex = 2;
@@ -90,7 +90,7 @@ namespace GUIPulsaciones
             // 
             this.LblEdad.AutoSize = true;
             this.LblEdad.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LblEdad.Location = new System.Drawing.Point(665, 147);
+            this.LblEdad.Location = new System.Drawing.Point(636, 153);
             this.LblEdad.Name = "LblEdad";
             this.LblEdad.Size = new System.Drawing.Size(51, 19);
             this.LblEdad.TabIndex = 3;
@@ -100,7 +100,7 @@ namespace GUIPulsaciones
             // 
             this.LblSexo.AutoSize = true;
             this.LblSexo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LblSexo.Location = new System.Drawing.Point(666, 191);
+            this.LblSexo.Location = new System.Drawing.Point(637, 197);
             this.LblSexo.Name = "LblSexo";
             this.LblSexo.Size = new System.Drawing.Size(50, 19);
             this.LblSexo.TabIndex = 4;
@@ -110,7 +110,7 @@ namespace GUIPulsaciones
             // 
             this.LblPulsaciones.AutoSize = true;
             this.LblPulsaciones.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LblPulsaciones.Location = new System.Drawing.Point(591, 348);
+            this.LblPulsaciones.Location = new System.Drawing.Point(562, 560);
             this.LblPulsaciones.Name = "LblPulsaciones";
             this.LblPulsaciones.Size = new System.Drawing.Size(107, 19);
             this.LblPulsaciones.TabIndex = 5;
@@ -119,7 +119,7 @@ namespace GUIPulsaciones
             // TxtIdentificacion
             // 
             this.TxtIdentificacion.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtIdentificacion.Location = new System.Drawing.Point(733, 68);
+            this.TxtIdentificacion.Location = new System.Drawing.Point(704, 74);
             this.TxtIdentificacion.Name = "TxtIdentificacion";
             this.TxtIdentificacion.Size = new System.Drawing.Size(193, 28);
             this.TxtIdentificacion.TabIndex = 6;
@@ -127,7 +127,7 @@ namespace GUIPulsaciones
             // TxtNombre
             // 
             this.TxtNombre.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombre.Location = new System.Drawing.Point(733, 105);
+            this.TxtNombre.Location = new System.Drawing.Point(704, 111);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(193, 28);
             this.TxtNombre.TabIndex = 7;
@@ -135,7 +135,7 @@ namespace GUIPulsaciones
             // TxtEdad
             // 
             this.TxtEdad.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtEdad.Location = new System.Drawing.Point(733, 143);
+            this.TxtEdad.Location = new System.Drawing.Point(704, 149);
             this.TxtEdad.Name = "TxtEdad";
             this.TxtEdad.Size = new System.Drawing.Size(193, 28);
             this.TxtEdad.TabIndex = 8;
@@ -144,7 +144,7 @@ namespace GUIPulsaciones
             // 
             this.TxtPulsaciones.Enabled = false;
             this.TxtPulsaciones.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPulsaciones.Location = new System.Drawing.Point(733, 344);
+            this.TxtPulsaciones.Location = new System.Drawing.Point(704, 556);
             this.TxtPulsaciones.Name = "TxtPulsaciones";
             this.TxtPulsaciones.Size = new System.Drawing.Size(193, 28);
             this.TxtPulsaciones.TabIndex = 9;
@@ -158,7 +158,7 @@ namespace GUIPulsaciones
             this.CmbSexo.Items.AddRange(new object[] {
             "Femenino",
             "Masculino"});
-            this.CmbSexo.Location = new System.Drawing.Point(733, 187);
+            this.CmbSexo.Location = new System.Drawing.Point(704, 193);
             this.CmbSexo.Name = "CmbSexo";
             this.CmbSexo.Size = new System.Drawing.Size(193, 29);
             this.CmbSexo.TabIndex = 10;
@@ -166,7 +166,7 @@ namespace GUIPulsaciones
             // BtnCalcularGuardar
             // 
             this.BtnCalcularGuardar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BtnCalcularGuardar.Location = new System.Drawing.Point(733, 247);
+            this.BtnCalcularGuardar.Location = new System.Drawing.Point(704, 253);
             this.BtnCalcularGuardar.Name = "BtnCalcularGuardar";
             this.BtnCalcularGuardar.Size = new System.Drawing.Size(193, 40);
             this.BtnCalcularGuardar.TabIndex = 11;
@@ -177,7 +177,7 @@ namespace GUIPulsaciones
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(733, 404);
+            this.button1.Location = new System.Drawing.Point(704, 616);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(193, 38);
             this.button1.TabIndex = 12;

@@ -31,11 +31,12 @@ namespace GUIPulsaciones
         {
             this.panelTitulo = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.CmbSexo = new System.Windows.Forms.ComboBox();
+            this.TblDatos = new System.Windows.Forms.DataGridView();
+            this.CmbFiltro = new System.Windows.Forms.ComboBox();
             this.LblIdentificacion = new System.Windows.Forms.Label();
+            this.BtnBuscar = new System.Windows.Forms.Button();
             this.panelTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TblDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTitulo
@@ -58,29 +59,30 @@ namespace GUIPulsaciones
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "CONSULTA";
             // 
-            // dataGridView1
+            // TblDatos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(402, 163);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(914, 606);
-            this.dataGridView1.TabIndex = 2;
+            this.TblDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TblDatos.Location = new System.Drawing.Point(402, 163);
+            this.TblDatos.Name = "TblDatos";
+            this.TblDatos.RowHeadersWidth = 51;
+            this.TblDatos.RowTemplate.Height = 24;
+            this.TblDatos.Size = new System.Drawing.Size(914, 606);
+            this.TblDatos.TabIndex = 2;
             // 
-            // CmbSexo
+            // CmbFiltro
             // 
-            this.CmbSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbSexo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CmbSexo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CmbSexo.FormattingEnabled = true;
-            this.CmbSexo.Items.AddRange(new object[] {
+            this.CmbFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CmbFiltro.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CmbFiltro.FormattingEnabled = true;
+            this.CmbFiltro.Items.AddRange(new object[] {
+            "Todos",
             "Femenino",
             "Masculino"});
-            this.CmbSexo.Location = new System.Drawing.Point(496, 89);
-            this.CmbSexo.Name = "CmbSexo";
-            this.CmbSexo.Size = new System.Drawing.Size(193, 29);
-            this.CmbSexo.TabIndex = 11;
+            this.CmbFiltro.Location = new System.Drawing.Point(496, 89);
+            this.CmbFiltro.Name = "CmbFiltro";
+            this.CmbFiltro.Size = new System.Drawing.Size(193, 29);
+            this.CmbFiltro.TabIndex = 11;
             // 
             // LblIdentificacion
             // 
@@ -92,21 +94,32 @@ namespace GUIPulsaciones
             this.LblIdentificacion.TabIndex = 12;
             this.LblIdentificacion.Text = "Filtrar";
             // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.Location = new System.Drawing.Point(745, 91);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(75, 27);
+            this.BtnBuscar.TabIndex = 13;
+            this.BtnBuscar.Text = "Buscar\r\n";
+            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
+            // 
             // FormConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1764, 877);
+            this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.LblIdentificacion);
-            this.Controls.Add(this.CmbSexo);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.CmbFiltro);
+            this.Controls.Add(this.TblDatos);
             this.Controls.Add(this.panelTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormConsulta";
             this.Text = "FormConsulta";
             this.panelTitulo.ResumeLayout(false);
             this.panelTitulo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TblDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,8 +129,9 @@ namespace GUIPulsaciones
 
         private System.Windows.Forms.Panel panelTitulo;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox CmbSexo;
+        private System.Windows.Forms.DataGridView TblDatos;
+        private System.Windows.Forms.ComboBox CmbFiltro;
         private System.Windows.Forms.Label LblIdentificacion;
+        private System.Windows.Forms.Button BtnBuscar;
     }
 }

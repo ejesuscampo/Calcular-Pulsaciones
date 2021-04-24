@@ -10,7 +10,7 @@ namespace DAL
 {
     public class PersonaRepository
     {
-        string ruta = "Persona.txt";
+        string ruta = @"Persona.txt";
 
         //Funcion GUARDAR
         public void Guardar(Persona persona)
