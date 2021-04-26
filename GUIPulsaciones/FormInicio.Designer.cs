@@ -30,11 +30,11 @@ namespace GUIPulsaciones
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.panelInicio = new System.Windows.Forms.Panel();
             this.personaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelInicio = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,18 +47,9 @@ namespace GUIPulsaciones
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1782, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1782, 29);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // panelInicio
-            // 
-            this.panelInicio.BackColor = System.Drawing.Color.White;
-            this.panelInicio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelInicio.Location = new System.Drawing.Point(0, 30);
-            this.panelInicio.Name = "panelInicio";
-            this.panelInicio.Size = new System.Drawing.Size(1782, 923);
-            this.panelInicio.TabIndex = 2;
             // 
             // personaToolStripMenuItem
             // 
@@ -68,14 +59,14 @@ namespace GUIPulsaciones
             this.personaToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.personaToolStripMenuItem.Image = global::GUIPulsaciones.Properties.Resources.usuario1;
             this.personaToolStripMenuItem.Name = "personaToolStripMenuItem";
-            this.personaToolStripMenuItem.Size = new System.Drawing.Size(110, 26);
+            this.personaToolStripMenuItem.Size = new System.Drawing.Size(110, 25);
             this.personaToolStripMenuItem.Text = "Persona";
             // 
             // registroToolStripMenuItem
             // 
             this.registroToolStripMenuItem.Image = global::GUIPulsaciones.Properties.Resources.agregar_usuario;
             this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
-            this.registroToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.registroToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             this.registroToolStripMenuItem.Text = "Registro";
             this.registroToolStripMenuItem.Click += new System.EventHandler(this.registroToolStripMenuItem_Click);
             // 
@@ -83,7 +74,7 @@ namespace GUIPulsaciones
             // 
             this.consultaToolStripMenuItem.Image = global::GUIPulsaciones.Properties.Resources.buscar1;
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             this.consultaToolStripMenuItem.Text = "Consulta";
             this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
             // 
@@ -92,8 +83,18 @@ namespace GUIPulsaciones
             this.salirToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salirToolStripMenuItem.Image = global::GUIPulsaciones.Properties.Resources.salida1;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(75, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(75, 25);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // panelInicio
+            // 
+            this.panelInicio.BackColor = System.Drawing.Color.White;
+            this.panelInicio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelInicio.Location = new System.Drawing.Point(0, 29);
+            this.panelInicio.Name = "panelInicio";
+            this.panelInicio.Size = new System.Drawing.Size(1782, 924);
+            this.panelInicio.TabIndex = 2;
             // 
             // FormInicio
             // 
