@@ -62,7 +62,7 @@ namespace GUIPulsaciones
             // TblDatos
             // 
             this.TblDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TblDatos.Location = new System.Drawing.Point(402, 163);
+            this.TblDatos.Location = new System.Drawing.Point(318, 164);
             this.TblDatos.Name = "TblDatos";
             this.TblDatos.RowHeadersWidth = 51;
             this.TblDatos.RowTemplate.Height = 24;

@@ -61,8 +61,8 @@ namespace DAL
             Persona persona = new Persona();
             persona.Identificacion = datosPersona[0];
             persona.Nombre = datosPersona[1];
-            persona.Sexo = datosPersona[2];
-            persona.Edad = int.Parse(datosPersona[3]);
+            persona.Edad = int.Parse(datosPersona[2]);
+            persona.Sexo = datosPersona[3];
             persona.Pulsaciones = Convert.ToDecimal(datosPersona[4]);
             return persona;
         }

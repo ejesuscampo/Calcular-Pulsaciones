@@ -21,11 +21,6 @@ namespace GUIPulsaciones
             InitializeComponent();
         }
 
-        private void BtnCalcularGuardar_Click(object sender, EventArgs e)
-        {
-            GuardarCalcular();
-        }
-
         private void GuardarCalcular()
         {
             Persona persona = new Persona()
@@ -38,7 +33,13 @@ namespace GUIPulsaciones
             persona.CalcularPulsaciones();
             TxtPulsaciones.Text = persona.Pulsaciones.ToString();
             var mensaje = personaService.Guardar(persona);
-            MessageBox.Show(mensaje, "Mensaje de guardado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            MessageBox.Show(mensaje, "Mensaje de guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void BtnCalcularGuardar_Click(object sender, EventArgs e)
+        {
+            GuardarCalcular();
+        }
+
     }
 }
