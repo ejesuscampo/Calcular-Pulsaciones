@@ -29,6 +29,7 @@ namespace GUIPulsaciones
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelTitulo = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.LblIdentificacion = new System.Windows.Forms.Label();
@@ -43,7 +44,9 @@ namespace GUIPulsaciones
             this.CmbSexo = new System.Windows.Forms.ComboBox();
             this.BtnCalcularGuardar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.errorProviderRegistro = new System.Windows.Forms.ErrorProvider(this.components);
             this.panelTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderRegistro)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTitulo
@@ -123,6 +126,8 @@ namespace GUIPulsaciones
             this.TxtIdentificacion.Name = "TxtIdentificacion";
             this.TxtIdentificacion.Size = new System.Drawing.Size(193, 28);
             this.TxtIdentificacion.TabIndex = 6;
+            this.TxtIdentificacion.Validating += new System.ComponentModel.CancelEventHandler(this.TxtIdentificacion_Validating);
+            this.TxtIdentificacion.Validated += new System.EventHandler(this.TxtIdentificacion_Validated);
             // 
             // TxtNombre
             // 
@@ -139,6 +144,8 @@ namespace GUIPulsaciones
             this.TxtEdad.Name = "TxtEdad";
             this.TxtEdad.Size = new System.Drawing.Size(193, 28);
             this.TxtEdad.TabIndex = 8;
+            this.TxtEdad.Validating += new System.ComponentModel.CancelEventHandler(this.TxtEdad_Validating);
+            this.TxtEdad.Validated += new System.EventHandler(this.TxtEdad_Validated);
             // 
             // TxtPulsaciones
             // 
@@ -184,6 +191,10 @@ namespace GUIPulsaciones
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // errorProviderRegistro
+            // 
+            this.errorProviderRegistro.ContainerControl = this;
+            // 
             // FormRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -207,6 +218,7 @@ namespace GUIPulsaciones
             this.Text = "FormRegistro";
             this.panelTitulo.ResumeLayout(false);
             this.panelTitulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderRegistro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,5 +240,6 @@ namespace GUIPulsaciones
         private System.Windows.Forms.ComboBox CmbSexo;
         private System.Windows.Forms.Button BtnCalcularGuardar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ErrorProvider errorProviderRegistro;
     }
 }
